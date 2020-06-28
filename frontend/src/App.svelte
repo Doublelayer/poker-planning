@@ -133,12 +133,18 @@
 <Notifications bind:this="{notifications}" />
 
 <nav
-    class="flex items-center justify-between flex-wrap bg-white p-6"
+    class="flex items-center justify-between flex-wrap bg-petrol p-6"
     role="navigation"
     aria-label="main navigation">
     <div class="flex items-center flex-shrink-0 mr-6">
         <a href="/">
-            <img src="/img/logo.svg" alt="Thunderdome" class="nav-logo" />
+            <img src="/img/jh-logo.svg" alt="Thunderdome" class="nav-logo" />
+        </a>
+        <a href="/">
+            <img
+                src="/img/novomind-logo.jpg"
+                alt="Thunderdome"
+                class="nav-logo" />
         </a>
     </div>
     {#if activeWarrior.name}
@@ -191,23 +197,13 @@
     {xfetch} />
 
 <footer class="p-6 text-center">
-    <a
-        href="https://github.com/StevenWeathers/thunderdome-planning-poker"
-        class="{footerLinkClasses}">
-        Thunderdome
+    <a href="https://www.novomind.com/de/" class="{footerLinkClasses}">
+        Novomind AG
     </a>
-    by
-    <a href="http://stevenweathers.com" class="{footerLinkClasses}">
-        Steven Weathers
-    </a>
-    . The source code is licensed
-    <a href="http://www.apache.org/licenses/" class="{footerLinkClasses}">
-        Apache 2.0
-    </a>
-    .
+    . Customer focues. Technology driven.
     <br />
-    Powered by
-    <a href="https://svelte.dev/" class="{footerLinkClasses}">Svelte</a>
-    and
-    <a href="https://golang.org/" class="{footerLinkClasses}">Go</a>
+
+    <a href="https://www.jh-profishop.de/" class="{footerLinkClasses}">
+        Der Onlineshop für Profis I Jungheinrich PROFISHOP
+    </a>
 </footer>

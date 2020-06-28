@@ -399,8 +399,8 @@
             </div>
 
             <div class="w-full lg:w-1/4 px-4">
-                <div class="bg-white shadow-lg mb-4 rounded">
-                    <div class="bg-blue-500 p-4 rounded-t">
+                <div class="bg-yelloy shadow-lg mb-4 rounded">
+                    <div class="bg-petrol p-4 rounded-t">
                         <h3 class="text-2xl text-white leading-tight font-bold">
                             Warriors
                         </h3>
@@ -430,11 +430,11 @@
                     {/if}
                 </div>
 
-                <div class="bg-white shadow-lg p-4 mb-4 rounded">
+                <div class="bg-yelloy shadow-lg p-4 mb-4 rounded">
                     <InviteWarrior {hostname} battleId="{battle.id}" />
                     {#if battle.leaderId === $warrior.id}
                         <div class="mt-4 text-right">
-                            <HollowButton color="red" onClick="{concedeBattle}">
+                            <HollowButton color="red" onClick="{concedeBattle}" additionalClasses="nm-orange-btn nm-orange-btn:hover"> 
                                 Delete Battle
                             </HollowButton>
                         </div>

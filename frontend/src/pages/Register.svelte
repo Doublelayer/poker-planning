@@ -125,7 +125,7 @@
             <div class="w-full md:w-1/2 px-4">
                 <form
                     on:submit="{createWarriorPrivate}"
-                    class="bg-white shadow-lg rounded p-4 md:p-6 mb-4"
+                    class="bg-yelloy shadow-lg rounded p-4 md:p-6 mb-4"
                     name="registerGuest">
                     <h2
                         class="font-bold text-xl md:text-2xl b-4 mb-2 md:mb-6
@@ -145,7 +145,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourName1"
                             name="yourName1"
                             required />
@@ -166,7 +166,7 @@
         <div class="w-full md:w-1/2 px-4">
             <form
                 on:submit="{createWarriorCorporal}"
-                class="bg-white shadow-lg rounded p-4 md:p-6 mb-4"
+                class="bg-yelloy shadow-lg rounded p-4 md:p-6 mb-4"
                 name="createAccount">
                 <h2
                     class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -186,7 +186,7 @@
                         placeholder="Enter your name"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourName2"
                         name="yourName2"
@@ -204,7 +204,7 @@
                         placeholder="Enter your email"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourEmail"
                         name="yourEmail"
@@ -223,7 +223,7 @@
                         placeholder="Enter a password"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourPassword1"
                         name="yourPassword1"
@@ -242,7 +242,7 @@
                         placeholder="Confirm your password"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourPassword2"
                         name="yourPassword2"

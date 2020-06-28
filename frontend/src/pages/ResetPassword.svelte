@@ -56,7 +56,7 @@
         <div class="w-full md:w-1/2 lg:w-1/3">
             <form
                 on:submit="{resetWarriorPassword}"
-                class="bg-white shadow-lg rounded p-6 mb-4"
+                class="bg-yelloy shadow-lg rounded p-6 mb-4"
                 name="resetWarriorPassword">
                 <div
                     class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -75,7 +75,7 @@
                         placeholder="Enter a password"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourPassword1"
                         name="yourPassword1"
@@ -94,7 +94,7 @@
                         placeholder="Confirm your password"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         id="yourPassword2"
                         name="yourPassword2"

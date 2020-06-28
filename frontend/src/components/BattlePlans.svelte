@@ -1,6 +1,7 @@
 <script>
     import AddPlan from '../components/AddPlan.svelte'
     import HollowButton from '../components/HollowButton.svelte'
+    import SolidButton from '../components/SolidButton.svelte'
 
     export let plans = []
     export let isLeader = false
@@ -57,16 +58,18 @@
     $: plansToShow = showCompleted ? pointedPlans : unpointedPlans
 </script>
 
-<div class="bg-white shadow-lg mb-4 rounded">
-    <div class="flex items-center bg-gray-200 p-4 rounded-t">
+<div class="shadow-lg mb-4 rounded">
+    <div class="flex items-center bg-petrol p-4 rounded-t">
         <div class="w-1/2 lg:w-3/4">
             <h3 class="text-2xl leading-tight font-bold">Plans</h3>
         </div>
         <div class="w-1/2 lg:w-1/4 text-right">
             {#if isLeader}
-                <HollowButton color="blue" onClick="{toggleAddPlan()}">
+                <SolidButton
+                    onClick="{toggleAddPlan()}"
+                    additionalClasses="nm-orange-btn nm-orange-btn:hover">
                     Add Plan
-                </HollowButton>
+                </SolidButton>
             {/if}
         </div>
     </div>
@@ -74,16 +77,16 @@
     <ul class="flex border-b border-gray-400">
         <li class="-mb-px {showCompleted ? '' : 'mr-1'}">
             <button
-                class="{showCompleted ? 'hover:text-blue-600 text-blue-400' : 'border-b border-blue-500 text-blue-600 hover:text-blue-800'}
-                bg-white inline-block py-4 px-4 font-semibold"
+                class="{showCompleted ? 'text-petrol-600 bg-white hover:text-yellow-600' : 'text-white bg-petrol'}
+                inline-block py-4 px-4 font-semibold"
                 on:click="{toggleShowCompleted(false)}">
                 Unpointed ({unpointedPlans.length})
             </button>
         </li>
         <li class="mr-1 {showCompleted ? 'mr-1' : ''}">
             <button
-                class="{showCompleted ? 'border-b border-blue-500 text-blue-600 hover:text-blue-800' : 'hover:text-blue-600 text-blue-400'}
-                bg-white inline-block py-4 px-4 font-semibold"
+                class="{showCompleted ? 'text-white bg-petrol' : 'text-petrol-600 bg-white hover:text-yellow-600'}
+                inline-block py-4 px-4 font-semibold"
                 on:click="{toggleShowCompleted(true)}">
                 Pointed ({pointedPlans.length})
             </button>
@@ -92,7 +95,8 @@
 
     {#each plansToShow as plan (plan.id)}
         <div
-            class="flex flex-wrap items-center border-b border-gray-400 p-4"
+            class="flex flex-wrap items-center border-b border-gray-400 p-4
+            bg-white"
             data-testId="battlePlan"
             data-planName="{plan.name}">
             <div class="w-full lg:w-2/3 mb-4 lg:mb-0">

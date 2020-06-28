@@ -13,12 +13,7 @@
     .btn.disabled {
         @apply opacity-50 cursor-not-allowed;
     }
-    .btn-green {
-        @apply bg-green-500;
-    }
-    .btn-green:hover {
-        @apply bg-green-600;
-    }
+
     .btn-blue {
         @apply bg-blue-500;
     }

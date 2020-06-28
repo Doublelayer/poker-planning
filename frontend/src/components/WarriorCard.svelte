@@ -22,7 +22,7 @@
 </script>
 
 <div
-    class="border-b border-gray-500 p-4 flex items-center"
+    class="border-b border-gray-500 p-4 flex items-center bg-white"
     data-testId="warriorCard"
     data-warriorName="{warrior.name}">
     <div class="w-1/4">
@@ -48,14 +48,14 @@
                     <button
                         on:click="{promoteLeader}"
                         class="inline-block align-baseline text-sm text-blue-500
-                        hover:text-blue-600 bg-transparent border-transparent">
+                        hover:text-petrol-600 bg-transparent border-transparent">
                         Promote
                     </button>
                     &nbsp;|&nbsp;
                     <button
                         on:click="{jabWarrior}"
                         class="inline-block align-baseline text-sm text-blue-500
-                        hover:text-blue-600 bg-transparent border-transparent">
+                        hover:text-petrol-600 bg-transparent border-transparent">
                         Nudge
                     </button>
                 {/if}
@@ -67,8 +67,7 @@
                     </span>
                 {:else if voted && points !== ''}
                     <span
-                        class="font-bold text-green-600 border-green-500 border
-                        p-2 rounded ml-2"
+                        class="font-bold text-white bg-petrol p-2 rounded ml-2"
                         data-testId="warriorPoints">
                         {points}
                     </span>

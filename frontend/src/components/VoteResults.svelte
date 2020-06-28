@@ -70,7 +70,7 @@
 
 <div
     class="flex flex-wrap items-center text-center mb-2 md:mb-4 pt-2 pb-2
-    md:pt-4 md:pb-4 bg-white shadow-lg rounded text-xl">
+    md:pt-4 md:pb-4 bg-yelloy shadow-lg rounded text-xl">
     <div class="w-1/3 ">
         <div class="mb-2">Total Votes</div>
         {totalVotes}
@@ -102,7 +102,7 @@
                     <WarriorIcon />
                     <span
                         class="text-sm text-right text-gray-900 font-normal w-48
-                        absolute left-0 top-0 -mt-2 ml-4 bg-white p-2 rounded
+                        absolute left-0 top-0 -mt-2 ml-4 bg-yelloy p-2 rounded
                         shadow-lg {showHighestVoters ? '' : 'hidden'}">
                         {#if counts[highestVote]}
                             {#each counts[highestVote].voters as voter}

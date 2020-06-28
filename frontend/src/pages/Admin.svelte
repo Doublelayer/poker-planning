@@ -42,7 +42,7 @@
         <div class="w-full">
             <div
                 class="flex flex-wrap items-center text-center pt-2 pb-2 md:pt-4
-                md:pb-4 bg-white shadow-lg rounded text-xl">
+                md:pb-4 bg-yelloy shadow-lg rounded text-xl">
                 <div class="w-1/4">
                     <div class="mb-2 font-bold">Unregistered Warriors</div>
                     {appStats.unregisteredWarriorCount}

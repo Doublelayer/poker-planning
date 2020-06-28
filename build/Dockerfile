@@ -46,7 +46,7 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflag
 # STEP 3 build a small image
 ############################
 FROM scratch
-# Import from builder.
+# Import from builder.  
 COPY --from=builderGo /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=builderGo /etc/passwd /etc/passwd
 # Copy our static executable

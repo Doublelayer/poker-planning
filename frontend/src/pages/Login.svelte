@@ -90,7 +90,7 @@
             {#if !forgotPassword}
                 <form
                     on:submit="{authWarrior}"
-                    class="bg-white shadow-lg rounded p-6 mb-4"
+                    class="bg-yelloy shadow-lg rounded p-6 mb-4"
                     name="authWarrior">
                     <div
                         class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -109,7 +109,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourEmail"
                             name="yourEmail"
                             type="email"
@@ -128,7 +128,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourPassword"
                             name="yourPassword"
                             type="password"
@@ -153,7 +153,7 @@
             {#if forgotPassword}
                 <form
                     on:submit="{sendPasswordReset}"
-                    class="bg-white shadow-lg rounded p-6 mb-4"
+                    class="bg-yelloy shadow-lg rounded p-6 mb-4"
                     name="resetPassword">
                     <div
                         class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -172,7 +172,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourResetEmail"
                             name="yourResetEmail"
                             type="email"

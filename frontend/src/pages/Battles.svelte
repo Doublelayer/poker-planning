@@ -39,7 +39,7 @@
     <div class="flex flex-wrap">
         <div class="mb-4 md:mb-6 w-full md:w-1/2 lg:w-3/5 md:pr-4">
             {#each battles as battle}
-                <div class="bg-white shadow-lg rounded mb-2">
+                <div class="bg-yelloy shadow-lg rounded mb-2">
                     <div
                         class="flex flex-wrap items-center p-4 border-gray-400
                         border-b">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="w-full md:w-1/2 lg:w-2/5 md:pl-2 xl:pl-4">
-            <div class="p-6 bg-white shadow-lg rounded">
+            <div class="p-6 bg-yelloy shadow-lg rounded">
                 <h2 class="mb-4 text-2xl font-bold leading-tight">
                     Create a Battle
                 </h2>

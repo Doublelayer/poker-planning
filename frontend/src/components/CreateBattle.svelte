@@ -18,7 +18,7 @@
     let plans = []
 
     let checkedPointColor = 'border-green-500 bg-green-100 text-green-600'
-    let uncheckedPointColor = 'border-gray-300 bg-white'
+    let uncheckedPointColor = 'border-gray-300 bg-yelloy'
 
     function addPlan() {
         plans.unshift({
@@ -81,7 +81,7 @@
                 placeholder="Enter a battle name"
                 class="bg-gray-200 border-gray-200 border-2 appearance-none
                 rounded w-full py-2 px-3 text-gray-700 leading-tight
-                focus:outline-none focus:bg-white focus:border-purple-500"
+                focus:outline-none focus:bg-yelloy focus:border-purple-500"
                 id="battleName"
                 required />
         </div>
@@ -122,7 +122,7 @@
                         placeholder="plan name"
                         class="bg-gray-200 border-gray-200 border-2
                         appearance-none rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:bg-white
+                        leading-tight focus:outline-none focus:bg-yelloy
                         focus:border-purple-500"
                         required />
                 </div>

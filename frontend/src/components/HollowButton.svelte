@@ -20,9 +20,6 @@
     .btn-hollow-green {
         @apply border-green-500 text-green-500;
     }
-    .btn-hollow-green:hover {
-        @apply bg-green-600;
-    }
     .btn-hollow-blue {
         @apply border-blue-500 text-blue-500;
     }
@@ -60,9 +57,7 @@
         <slot />
     </button>
 {:else}
-    <a
-        {href}
-        class="btn-hollow btn-hollow-{color} inline-block no-underline {additionalClasses}">
+    <a {href} class="btn-hollow inline-block no-underline {additionalClasses}">
         <slot />
     </a>
 {/if}

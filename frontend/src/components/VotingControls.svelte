@@ -40,13 +40,14 @@
 {#if planId != ''}
     <div class="p-4" data-testId="votingControls">
         <SolidButton
-            color="blue"
-            additionalClasses="mb-2 w-full"
+            additionalClasses="mb-2 w-full bg-petrol"
             onClick="{skipPlan}">
             Skip Plan
         </SolidButton>
         {#if !votingLocked}
-            <SolidButton additionalClasses="w-full" onClick="{endPlanVoting}">
+            <SolidButton
+                additionalClasses="w-full nm-orange-btn nm-orange-btn:hover"
+                onClick="{endPlanVoting}">
                 Finish Voting
             </SolidButton>
         {:else}
@@ -79,7 +80,7 @@
                     </div>
                     <div class="w-1/2 text-right px-2">
                         <SolidButton
-                            additionalClasses="w-full h-full"
+                            additionalClasses="w-full h-full nm-orange-btn nm-orange-btn:hover "
                             type="submit">
                             Save
                         </SolidButton>

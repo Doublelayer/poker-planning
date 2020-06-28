@@ -17,7 +17,7 @@
     <input
         class="flex-shrink flex-grow flex-auto leading-normal w-px flex-1
         border-2 h-10 bg-gray-200 border-gray-200 rounded rounded-r-none px-3
-        appearance-none text-gray-700 focus:outline-none focus:bg-white
+        appearance-none text-gray-700 focus:outline-none focus:bg-yelloy
         focus:border-purple-500 "
         type="text"
         value="{hostname}/battle/{battleId}"

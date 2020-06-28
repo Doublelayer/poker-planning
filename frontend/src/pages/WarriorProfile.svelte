@@ -124,7 +124,7 @@
             {#if !updatePassword}
                 <form
                     on:submit="{updateWarriorProfile}"
-                    class="bg-white shadow-lg rounded p-4 md:p-6 mb-4"
+                    class="bg-yelloy shadow-lg rounded p-4 md:p-6 mb-4"
                     name="updateProfile">
                     <h2
                         class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -144,7 +144,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourName"
                             name="yourName"
                             type="text"
@@ -199,7 +199,7 @@
             {#if updatePassword}
                 <form
                     on:submit="{updateWarriorPassword}"
-                    class="bg-white shadow-lg rounded p-6 mb-4"
+                    class="bg-yelloy shadow-lg rounded p-6 mb-4"
                     name="updateWarriorPassword">
                     <div
                         class="font-bold text-xl md:text-2xl mb-2 md:mb-6
@@ -219,7 +219,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourPassword1"
                             name="yourPassword1"
                             type="password"
@@ -238,7 +238,7 @@
                             class="bg-gray-200 border-gray-200 border-2
                             appearance-none rounded w-full py-2 px-3
                             text-gray-700 leading-tight focus:outline-none
-                            focus:bg-white focus:border-purple-500"
+                            focus:bg-yelloy focus:border-purple-500"
                             id="yourPassword2"
                             name="yourPassword2"
                             type="password"

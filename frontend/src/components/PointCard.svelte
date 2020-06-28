@@ -15,8 +15,9 @@
     let showVoters = false
 
     $: activeColor = active
-        ? 'border-green-500 bg-green-100 text-green-600'
-        : 'border-gray-300 bg-white'
+        ? 'border-yellow text-yellow-600 bold no-box-shadow'
+        : 'border-gray-300'
+    $: activeBackground = active ? 'bg-petrol' : ''
     $: lockedClass = isLocked
         ? 'opacity-25 cursor-not-allowed'
         : 'cursor-pointer'
@@ -55,8 +56,7 @@
                 <WarriorIcon height="24" width="24" />
                 <span
                     class="text-right text-sm text-gray-900 font-normal w-48
-                    absolute left-0 top-0 mt-0 ml-6 bg-white p-2 rounded
-                    shadow-lg {showVoters ? '' : 'hidden'}">
+                    absolute left-0 top-0 mt-0 ml-6 p-2 rounded shadow-lg {showVoters ? '' : 'hidden'}">
                     {#each results.voters as voter}
                         {voter}
                         <br />
@@ -67,8 +67,8 @@
     {/if}
     <div
         class="w-full rounded overflow-hidden shadow-lg border {activeColor}
-        {lockedClass} relative text-3xl lg:text-5xl relative z-0"
+        {lockedClass} relative text-3xl lg:text-5xl relative z-0 card-img-bg"
         on:click="{voteAction}">
-        <div class="py-12 md:py-16 text-center">{point}</div>
+        <div class="py-12 md:py-16 text-center {activeBackground}">{point}</div>
     </div>
 </div>
