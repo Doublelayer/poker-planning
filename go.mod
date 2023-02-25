@@ -14,7 +14,7 @@ require (
 	github.com/markbates/pkger v0.10.1
 	github.com/matcornic/hermes/v2 v2.1.0
 	github.com/spf13/viper v1.6.3
-	golang.org/x/crypto v0.0.0-20191108234033-bd318be0434a
+	golang.org/x/crypto v0.1.0
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 	gopkg.in/go-playground/validator.v9 v9.30.0
